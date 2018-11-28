@@ -1,0 +1,25 @@
+<div class="container">
+      {{#each commentlist}}
+      
+      <div style="background-color: grey; margin:20px;">
+        <p>{{ this.name }}</p>
+        <p>{{ this.blog  }}</p>
+	        {{#each comments}}
+	        <div style="background-color:red">
+	        <p>{{ this.name }}<br></p>
+	        <p>{{ this.content }}<br></p>
+	    	</div>
+	    	{{/each}}
+        
+
+       </div> 
+       
+      {{/each}}   
+</div>
+
+
+
+
+
+
+

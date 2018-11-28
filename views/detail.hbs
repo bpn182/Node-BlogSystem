@@ -1,0 +1,13 @@
+<div class="container">
+      {{# each commentlist }}
+      
+      <div style="background-color: grey; margin:20px;">
+        <p>{{ this.name}}</p>
+         <p>{{ this.content }}</p>
+        <a href="/showcomments/{{this._id}}"><button type="button" class="btn btn-primary">Primary</button></a>
+
+       </div> 
+       
+      {{/each}}
+    
+</div>
